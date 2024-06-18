@@ -18,12 +18,14 @@
    ```
 3. Create config.js file in the root directory and set up GitHub ClientID and CLientSecret for your application  
 
-   ```config.js
+   ```config.js  
+   
     module.exports = {
     clientID: 
     clientSecret: 
     callbackURL: "http://localhost:3000/auth"
-}
+}  
+
     ```
 
 4. Start the server:  
