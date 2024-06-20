@@ -27,7 +27,6 @@
 
     ```
 
-<<<<<<< HEAD
 4. Create .env file in the root directory of the project and fill it with the following environment variables:
 
    ```.env
@@ -40,9 +39,6 @@
    ```
 
 5. Start the server:  
-=======
-4. Start the server:  
->>>>>>> parent of 5ca7fa1 (fix readme)
 
    ```bash
    nodemon
