@@ -60,3 +60,5 @@ config.js
 *.dat
 Recording*
 version.plist
+
+.env
