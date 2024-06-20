@@ -21,9 +21,8 @@ app.use(session({
 }))
 app.use(passport.initialize());
 app.use(passport.session());
-const passportConfig = require('./config');
-const { StatusCodes } = require('http-status-codes');
-passport.use(new GithubStrategy(passportConfig,
+const passportConfig = require('./config')
+passport.use(new GitHubStrategy(passportConfig,
 function(accessToken, refreshToken, profile, cb) {
   return cb(null, profile);
 }
@@ -47,14 +46,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 
 app.use(function(req, res, next) {
-  next(createError(StatusCodes.NOT_FOUND));
+  next(createError(404));
 });
 
 app.use(function(err, req, res, next) {
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  res.status(err.status || StatusCodes.INTERNAL_SERVER_ERROR);
+  res.status(err.status || 500);
   res.render('error');
 });
 

@@ -2,16 +2,14 @@ var express = require('express');
 var router = express.Router();
 const axios = require('axios');
 const passport = require('passport');
-var dotenv = require('dotenv');
-dotenv.config();
 
 
-const apiKey = process.env.MDB_API_KEY;
-//const apiKey = process.env.API_KEY;
-const apiBaseUrl = process.env.MDB_API_BASE_URL;
-//const apiBaseUrl = process.env.API_BASE_UR;
+const apiKey = '1fb720b97cc13e580c2c35e1138f90f8';
+//const apiKey = '123456789';
+const apiBaseUrl = 'http://api.themoviedb.org/3';
+//const apiBaseUrl = 'http://localhost:3030';
 const nowPlayingUrl = `${apiBaseUrl}/movie/now_playing?api_key=${apiKey}`;
-const imageBaseUrl = process.env.IMAGE_BASE_URL;
+const imageBaseUrl = 'http://image.tmdb.org/t/p/w300';
 
 router.use((req, res, next) => {
   res.locals.imageBaseUrl = imageBaseUrl;
