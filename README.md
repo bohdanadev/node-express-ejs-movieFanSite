@@ -27,6 +27,17 @@
 
     ```
 
+4. Create .env file in the root directory of the project and fill it with the following environment variables:
+
+   ```.env
+   PORT=3000  
+   MDB_API_KEY=`themoviedb.org` API Key  
+   MDB_API_BASE_URL=http://api.themoviedb.org/3  
+   IMAGE_BASE_URL=http://image.tmdb.org/t/p/w300  
+   API_BASE_URL=http://localhost:3030  
+   API_KEY=  
+   ```
+
 4. Start the server:  
 
    ```bash
