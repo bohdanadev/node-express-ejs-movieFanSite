@@ -31,11 +31,11 @@
 
    ```.env
    PORT=3000  
-   MDB_API_KEY=1fb720b97cc13e580c2c35e1138f90f8  
+   MDB_API_KEY=`themoviedb.org` API Key  
    MDB_API_BASE_URL=http://api.themoviedb.org/3  
    IMAGE_BASE_URL=http://image.tmdb.org/t/p/w300  
    API_BASE_URL=http://localhost:3030  
-   API_KEY=123456789  
+   API_KEY=  
    ```
 
 5. Start the server:  
